@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card | Frontend Wizards Stage 0</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+      <header>
+        <h2 data-testid="test-user-name">Adekunjo Abdul Gafar Adetunji</h2>
+      </header>
+
+      <figure class="avatar">
+        <img
+          src="Tunji.jpeg"
+          alt="Profile picture of Adekunjo Abdul Gafar Adetunji"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <p data-testid="test-user-bio">
+        Enthusiastic and fast-learning graduate with a background in Statistics
+        and IT, passionate about frontend development and data analysis.
+      </p>
+
+      <p>
+        Current Time (ms):
+        <span data-testid="test-user-time" id="currentTime"></span><br />
+        Human Time:
+        <span id="readableTime"></span>
+      </p>
+
+      <nav data-testid="test-user-social-links" class="social-links">
+        <ul>
+          <li>
+            <a
+              data-testid="test-user-social-twitter"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              data-testid="test-user-social-github"
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              data-testid="test-user-social-linkedin"
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <section data-testid="test-user-hobbies" class="hobbies">
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Coding</li>
+          <li>Playing football</li>
+          <li>Watching movies</li>
+        </ul>
+      </section>
+
+      <section data-testid="test-user-dislikes" class="dislikes">
+        <h3>Dislikes</h3>
+        <ul>
+          <li>Procrastination</li>
+          <li>Dishonesty</li>
+          <li>Slow internet</li>
+        </ul>
+      </section>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
